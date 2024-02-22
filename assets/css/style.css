@@ -89,7 +89,7 @@ header {
 /* Start of main section  index page */
 .utsav-banner{
     display: grid;
-    grid-template-columns: 150px 1fr 1fr 70px 1fr 1fr 150px;
+    grid-template-columns: 150px 1fr 1fr 70px 2fr 3fr 150px;
     grid-template-rows: 150px 150px 100px 400px 100px 150px;
     overflow: hidden;
 }
