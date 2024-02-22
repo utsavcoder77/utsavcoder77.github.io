@@ -94,7 +94,7 @@ header {
 }
 
 .utsav-banner-text {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 2 / 2 / 3 / 3;
     align-self: center;
     font-family: var(--extra-light-font-family);
     font-size: 18px;
