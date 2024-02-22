@@ -91,6 +91,7 @@ header {
     display: grid;
     grid-template-columns: 150px 1fr 1fr 70px 3fr 2fr 150px;
     grid-template-rows: 150px 150px 100px 400px 100px 150px;
+    overflow-x: hidden;
 }
 
 .utsav-banner-text {
