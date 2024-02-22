@@ -89,19 +89,19 @@ header {
 /* Start of main section  index page */
 .utsav-banner{
     display: grid;
-    grid-template-columns: 150px 1fr 1fr 70px 3fr 2fr;
-    grid-template-rows: 150px 400px 400px 200px 200px;
+    grid-template-columns: 150px 1fr 1fr 70px 3fr 2fr 150px;
+    grid-template-rows: 150px 150px 100px 400px 100px 150px;
 }
 
 .utsav-banner-text {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 2 / 2 / 3 / 3;
     align-self: center;
     font-family: var(--extra-light-font-family);
     font-size: 18px;
 }
 
 .utsav-banner-header {
-    grid-area: 2 / 2 / 4 / 3;
+    grid-area: 3 / 2 / 5 / 4;
     align-self: baseline;
 }
 
@@ -117,7 +117,7 @@ header {
 }
 
 .utsav-banner-paragraph {
-    grid-area: 4 / 2 / 5 / 3;
+    grid-area: 5 / 2 / 6 / 4;
     align-self: center;
 }
 
@@ -129,7 +129,7 @@ header {
 }
 
 .link-see-my-work {
-    grid-area: 5 / 2 / 6 / 3;
+    grid-area: 6 / 2 / 7 / 3;
     align-self: center;
 }
 
@@ -140,13 +140,13 @@ header {
     border-radius: 15px;
     font-family: var(--light-font-family);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     border: none;
 }
 
 .link-start-work-with-me {
-    grid-area: 5 / 3 / 6 / 4;
+    grid-area: 6 / 3 / 7 / 4;
     align-self: center;
 }
 
@@ -157,13 +157,13 @@ header {
     border-radius: 15px;
     font-family: var(--light-font-family);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     border: none;
 }
 
 .utsav-picture {
-    grid-area: 1 / 5 / 5 / 7;
+    grid-area: 2 / 5 / 7 / 7;
     background-color: var(--primary-color);
     border-radius: 50% 0 50% 0;
 }
