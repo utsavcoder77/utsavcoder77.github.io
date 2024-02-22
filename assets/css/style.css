@@ -267,7 +267,7 @@ header {
 /* Start of main section of (portfolio page) */
 .portfolio-page-main {
     display: grid;
-    grid-template-columns: 150px 500px 200px 500px 150px;
+    grid-template-columns: 150px 1fr 1fr 30px 3fr 3fr 150px;;
     grid-template-rows: 100px 100px 10px 400px 100px 100px;
 }
 
@@ -476,7 +476,7 @@ footer {
 /* Start of media-quires for main section of landing page */
 
 /* Start of media quires for small screen */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .utsav-banner {
         display: flex;
         flex-direction: column;
@@ -486,16 +486,6 @@ footer {
 
 }
 /* End of media queries for small screen */
-
-/* Start of media quries for bigger screen */
-@media screen and (min-width: 801px) {
-    .utsav-banner{
-        display: grid;
-        grid-template-columns: 150px 300px 300px 70px 300px 300px 150px;
-        grid-template-rows: 150px 150px 100px 300px 100px 150px;
-    }
-}
-/* End of media quries for bigger screen */
 
 /* END of media-quires for main section of landing page */
 
