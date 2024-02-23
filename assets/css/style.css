@@ -487,7 +487,15 @@ footer {
     }
 
 }
-/* End of media queries for small screen */
 
+/* End of media queries for small screen */
+/* Start of media quries for max-width 1080px */
+@media screen and (min-width: 1080px) {
+    .utsav-banner-header {
+        align-self: center;
+        line-height: 5rem;
+    }
+}
+/* End of media quries for max-width 1080px */
 /* END of media-quires for main section of landing page */
 
