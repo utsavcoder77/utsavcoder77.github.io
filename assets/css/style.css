@@ -83,6 +83,14 @@ header {
     background-color: var(--primary-color);
     cursor: pointer;
 }
+
+.hamburger-menu-btn {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
 /* End of navigation bar */
 /* End of header for all pages (home, about, portfolio, contact, resume)*/
 

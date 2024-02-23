@@ -27,6 +27,22 @@
                     <button class="button-connect">Contact</button>
                 </a>
         </nav>
+        <nav class="mobile-main-nav" id="mobile-main-nav">
+            <div class="main-close-button" id="close-button">
+                <button onclick="hideMobileMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul>
+                <li><a href="./index.html" target="_parent">Home</a></li>
+                <li><a href="../files_html/about.html" target="_blank">About</a></li>
+                <li><a href="../files_html/portfolio.html" target="_blank">Portfolio</a></li>
+                <li><a href="../files_html/resume.html" target="_blank">Resume</a></li>
+            </ul>
+                <a href="../portfolio_utsav/files_html/contact.html" target="_blank">
+                    <button class="button-connect">Contact</button>
+                </a>
+        </nav>
         <div class="hamburger-menu">
             <button class="hamburger-menu-btn" onclick="showMobileMenu()">
                 <i class="fa-solid fa-bars"></i>
@@ -104,5 +120,14 @@
         </div>
     </footer>
     <!-- End of footer -->
+    <script>
+        const mobileMainNav = document.getElementById("mobile-main-nav");
+        function showMobileMenu() {
+            mobileMainNav.classList.add("show-mobile-menu");
+         }
+        function hideMobileMenu() {
+            mobileMainNav.classList.remove("show-mobile-menu");
+        }
+    </script>
 </body>
 </html>
