@@ -491,6 +491,7 @@ footer {
         gap: 3rem;
         align-items: center;
         width: 100%;
+        padding: 8rem 8rem;
      }
      /* End of footer css for max-width 800px */
 
