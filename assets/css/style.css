@@ -57,6 +57,7 @@ header {
     display: flex;
     list-style-type: none;
     gap: 3.125rem;
+    align-items: center;
 }
 
 .navigation-bar ul li a {
@@ -85,11 +86,38 @@ header {
 }
 
 .hamburger-menu-btn {
-    background-color: transparent;
     border: 0;
-    color: white;
+    color: black;
     font-size: 20px;
     display: none;
+}
+
+.mobile-main-nav ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.mobile-main-nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.mobile-main-nav .main-close-button {
+    text-align: right;
+    border: 0;
+    color: black;
+}
+
+.mobile-main-nav .main-close-button  button {
+    color: black;
+    border: 0;
 }
 /* End of navigation bar */
 /* End of header for all pages (home, about, portfolio, contact, resume)*/
@@ -500,6 +528,18 @@ footer {
         align-items: center;
         width: 100%;
      }
+
+     .hamburger-menu-btn {
+        display: block;
+    }
+
+    .navigation-bar ul {
+        display: none;
+    }
+
+    .show-mobile-menu{
+        display: block;
+    }
     /* End of footer css for max-width 800px */
 
     
