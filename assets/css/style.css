@@ -30,9 +30,6 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 100%;
-}
 /* Start of header for all pages (home, about, portfolio, contact, resume) */
 header {
     margin: 1rem 0 1rem 0;
