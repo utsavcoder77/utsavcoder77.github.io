@@ -486,9 +486,17 @@ footer {
         
     }
 
-}
+    .myfooter {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        align-items: center;
+     }
 
+}
 /* End of media queries for small screen */
+
 /* Start of media quries for max-width 1080px */
 @media screen and (min-width: 1080px) {
     .utsav-banner-header {
