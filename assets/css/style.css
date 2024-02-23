@@ -367,6 +367,7 @@ footer {
    display: grid;
    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
    grid-template-rows: 1fr 1fr 1fr 1fr;
+   padding: 5rem 5rem;
 }
 /* footer grid-container end */
 
