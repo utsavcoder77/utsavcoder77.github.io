@@ -30,6 +30,9 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 100%;
+}
 /* Start of header for all pages (home, about, portfolio, contact, resume) */
 header {
     margin: 1rem 0 1rem 0;
@@ -88,7 +91,6 @@ header {
 
 /* Start of main section  index page */
 .utsav-banner{
-    width: auto;
     display: grid;
     grid-template-columns: 3.2rem 1fr 1fr 3.2rem 1fr 1fr 1fr 3.2rem;
     grid-template-rows: 4rem 3rem 1fr 1fr 3rem 3rem 6rem 7rem 4rem;
@@ -359,7 +361,6 @@ input[type=submit]:hover {
 /* Start of footer for all pages (home, about, portfolio, contact, resume) */
 footer {
     background-color: var(--secondary-color);
-    margin-top: 150px;
 }
 /* footer grid-container start */
 .myfooter {
@@ -485,14 +486,14 @@ footer {
         gap: 15px;
         
     }
-
+    /* Start of footer css for max-width 800px */
     .myfooter {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
         align-items: center;
      }
+     /* End of footer css for max-width 800px */
 
 }
 /* End of media queries for small screen */
