@@ -492,6 +492,7 @@ footer {
         flex-wrap: wrap;
         gap: 3rem;
         align-items: center;
+        width: 100%;
      }
      /* End of footer css for max-width 800px */
 
