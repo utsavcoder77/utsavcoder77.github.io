@@ -91,22 +91,24 @@
 }
 
 .hamburger-menu {
-    border: 0;
-    font-size: 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    font-size: 2rem;
     display: none;
     color: var(--secondary-color);
-    
+    background-color: transparent;
 }
 
 .mobile-main-nav {
     display: none;
     position: absolute;
-    right: 2rem;
-    top: 0;
-    bottom: 100px;
+    right: 0;
+    top: 5%;
+    bottom: 0;
     width: 100%;
     max-width: 8rem;
-    
 }
 
 .mobile-main-nav ul{
@@ -126,10 +128,15 @@
     padding: 0.5rem;
 }
 
+.mobile-main-nav .close-button button {
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+
+}
 
 .show-mobile-menu {
     display: none;
-    
 }
 /* End of navigation bar */
 /* End of header for all pages (home, about, portfolio, contact, resume)*/
@@ -536,7 +543,7 @@ footer {
         display: none;
     }
 
-    .show-mobile-menu{
+    .show-mobile-menu {
         display: block;
     }
 
