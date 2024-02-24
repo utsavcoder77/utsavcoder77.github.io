@@ -9,30 +9,14 @@
 </head>
 <body>
     <!-- Start of header -->
-    <header>
+    <header class="main-nav">
         <nav class="navigation-bar">
             <figure class="logo-portfolio">
-                <a href="/index.html">
+                <a href="./index.html">
                     <img src="../assets/images/logo.png" alt="logo of the website">
                 </a>
             </figure>
-            <ul>
-                <li><a href="/index.html" target="_parent">Home</a></li>
-                <li><a href="../files_html/about.html" target="_blank">About</a></li>
-                <li><a href="../files_html/portfolio.html" target="_blank">Portfolio</a></li>
-                <li><a href="../files_html/resume.html" target="_blank">Resume</a></li>
-                <li>
-                    <a href="../files_html/contact.html" target="_blank">
-                        <button class="button-connect">Contact</button>
-                    </a>
-                </li>
-        </nav>
-        <nav class="mobile-main-nav" id="mobile-main-nav">
-            <div class="main-close-button" id="close-button">
-                <button onclick="hideMobileMenu()">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
+
             <ul>
                 <li><a href="./index.html" target="_parent">Home</a></li>
                 <li><a href="../files_html/about.html" target="_blank">About</a></li>
@@ -40,14 +24,31 @@
                 <li><a href="../files_html/resume.html" target="_blank">Resume</a></li>
                 <li>
                     <a href="../portfolio_utsav/files_html/contact.html" target="_blank">
+                    <button class="button-connect">Contact</button></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobile-main-nav" id="mobile-main-nav">
+            <div class="close-button" id="close-button">
+                <button onclick="hideMobileMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul>
+                <li><a href="./index.html" target="_parent">Home</a></li>
+                <li><a href="/files_html/about.html" target="_blank">About</a></li>
+                <li><a href="../files_html/portfolio.html" target="_blank">Portfolio</a></li>
+                <li><a href="../files_html/resume.html" target="_blank">Resume</a></li>
+                <li>
+                    <a href="/files_html/contact.html" target="_blank">
                         <button class="button-connect">Contact</button>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class="hamburger-menu">
-            <button class="hamburger-menu-btn" onclick="showMobileMenu()">
-                <i class="fa-solid fa-bars"></i>
+        <div>
+            <button class="hamburger-menu" onclick="showMobileMenu()">
+                <i class="fa-regular fa-bars"></i>
             </button>
         </div>
     </header>
