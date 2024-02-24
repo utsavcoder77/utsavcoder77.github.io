@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
 @font-face {
     font-family: RobotoCondensed-light;
     src: url(../fonts/RobotoCondensed-Light.ttf);
@@ -31,9 +33,12 @@
 }
 
 /* Start of header for all pages (home, about, portfolio, contact, resume) */
-header {
+.main-header {
     margin: 1rem 0 1rem 0;
     background: var(--secondary-font-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /* Start of navigation-bar */
 .navigation-bar {
@@ -87,26 +92,38 @@ header {
 
 .hamburger-menu-btn {
     border: 0;
-    color: black;
     font-size: 20px;
     display: none;
 }
 
-.mobile-main-nav ul {
+.mobile-main-nav {
     display: none;
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
     width: 100%;
-    max-width: 300px;
+    max-width: 28rem;
     padding: 20px;
 }
 
+.mobile-main-nav ul{
+    background-color: var(--primary-color);
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 .mobile-main-nav a {
-    display: inline-block;
-    padding: 10px 15px;
     text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--Bold-font-family);
+    padding: 0.5rem;
+}
+
+.mobile-main-nav .close-button {
+    text-align: right;
 }
 
 .mobile-main-nav .main-close-button {
@@ -115,9 +132,8 @@ header {
     color: black;
 }
 
-.mobile-main-nav .main-close-button  button {
-    color: black;
-    border: 0;
+.show-mobile-menu {
+    display: none;
 }
 /* End of navigation bar */
 /* End of header for all pages (home, about, portfolio, contact, resume)*/
@@ -541,9 +557,23 @@ footer {
         display: block;
     }
     /* End of footer css for max-width 800px */
+    .logo-portfolio {
+        justify-content: flex-start;
+        align-self: center;
+    }
 
+    .logo-portfolio img{
+        width: auto;
+        height: 100%; 
+        filter: brightness(80%);
+}
     
-    
+}
+
+@media screen and (min-width: 800px) {
+    .show-mobile-menu {
+        display: none;
+    }
 }
 /* End of media queries for small screen */
 
