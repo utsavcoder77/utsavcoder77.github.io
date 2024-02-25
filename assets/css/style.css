@@ -358,15 +358,15 @@
 /* End of main section of (portfolio page) */
 
 /* Start of contact-page form */
-input[type=text], select, textarea, input[type=email], input[type=tel] {
+input[type=text], select, textarea, input[type=email], input[type=tel] input[type=radio] {
     padding: 0.8rem;
     border: 2px solid var(--primary-font-color);
     border-radius: 0.4rem;
     box-sizing: border-box;
     margin-top: 0.3rem;
     margin-bottom: 1rem;
-    resize: vertical;
     width: 100%;
+    resize: vertical;
 }
 
 label {
@@ -619,13 +619,21 @@ footer {
 /* End of media quries for max-width 1080px */
 
 /* Start of media queries for contact page */
-@media screen and (max-width: 900px) {
-    input[type=text], select, textarea, input[type=email], input[type=tel] {
-        max-width: 100%;
-    }
+@media screen and (max-width: 600px) {
+        .contact-form{
+            flex-wrap: wrap;
+            max-width: 100%;
+            width: 600px;
+        }
 
-
+        .background {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500pxpx;
+        }
 
 }
-/* Start of media queries for contact page */
+
+/* End of media queries for contact page */
 
