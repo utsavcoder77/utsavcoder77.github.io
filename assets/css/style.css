@@ -385,6 +385,7 @@ label {
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
+    margin: 0 auto;
 }
 
 input[type=submit] {
@@ -397,7 +398,6 @@ input[type=submit] {
     float: right;
     font-family: var(--Bold-font-family);
     font-size: 1.2rem;
-    margin: 0.5rem 1.2rem;
 }
 
 input[type=submit]:hover {
@@ -620,17 +620,14 @@ footer {
 
 /* Start of media queries for contact page */
 @media screen and (max-width: 600px) {
-        .contact-form{
-            flex-wrap: wrap;
-            max-width: 100%;
-            width: 600px;
+        body {
+            overflow: hidden;
         }
-
         .background {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 500pxpx;
+            width: 500px;
         }
 
 }
