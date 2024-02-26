@@ -358,20 +358,10 @@
 /* End of main section of (portfolio page) */
 
 /* Start of contact-page form */
-input[type=text], select, textarea, input[type=email], input[type=tel] input[type=radio] {
-    padding: 0.8rem;
-    border: 2px solid var(--primary-font-color);
-    border-radius: 0.4rem;
-    box-sizing: border-box;
-    margin-top: 0.3rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    resize: vertical;
-}
 
 label {
-    padding: 1rem 1rem 1rem 0;
-    display: inline-block;
+    text-align: left;
+    display: block;
     font-family: var(--light-font-family);
     font-weight: bold;
     font-size: 1.8rem;
@@ -379,35 +369,55 @@ label {
 }
 
 .contact-form {
-    max-width: 100%;
-    padding: 10rem 10rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
-    margin: 0 auto;
+    background-color: var(--primary-color);
+    margin: 0 5%;
+    padding: 2.8rem 3.4rem;
+    border-radius: 2rem;
+    margin: 5rem 0;
 }
 
-input[type=submit] {
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.col {
+    padding: 1.3rem 2.2rem;
+    text-align: left;
+    margin: auto;
+}
+
+.form-control {
+    width: 100%;
+    border: none;
+    padding: 1.2rem 1.8rem;
+}
+
+
+.submit {
+    text-align: center;
+
+}
+
+.submit-form {
+    padding: 1.5rem 2.2rem;
     background-color: var(--secondary-color);
     color: var(--secondary-font-color);
-    padding: 1.8rem 2.2rem;
-    border: none;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    float: right;
+    border-radius: 1.2rem;
     font-family: var(--Bold-font-family);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
-input[type=submit]:hover {
-    background-color: var(--primary-font-color);
+.row {
+    grid-template-columns: auto;
 }
 
 .contact-form-heading h1 {
     font-family: var(--Bold-font-family);
     color: var(--primary-font-color);
     text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .background {
@@ -566,6 +576,12 @@ footer {
     }
 /* End of hamburger menu for mobile menu */
 
+/* Start of contact page */
+.contact-form {
+    grid-auto-columns: auto;
+}
+/* End of contact page */
+
 /* Start of main section of index page */
     .utsav-banner {
         display: flex;
@@ -618,19 +634,4 @@ footer {
 }
 /* End of media quries for max-width 1080px */
 
-/* Start of media queries for contact page */
-@media screen and (max-width: 600px) {
-        body {
-            overflow: hidden;
-        }
-        .background {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 500px;
-        }
-
-}
-
-/* End of media queries for contact page */
 
