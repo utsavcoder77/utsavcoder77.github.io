@@ -329,18 +329,22 @@
 /* Start of main section of (portfolio page) */
 .portfolio-page-main {
     display: grid;
-    grid-template-columns: 150px 1fr 1fr 30px 3fr 3fr 150px;;
-    grid-template-rows: 100px 100px 10px 400px 100px 100px;
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: 8rem 1fr 4fr 3fr 8rem;
+    row-gap: 0.5rem;
 }
 
 .portfolio-page-heading {
-    grid-area: 2 / 3 / 3 / 4;
+    grid-area: 2 / 2 / 3 / 3;
     align-self: center;
     font-family: var(--Bold-font-family);
+    padding-left: 40%;
+    color: var(--secondary-color);
+    font-size: 2rem;
 }
 
 .mywork-image {
-    grid-area: 4 / 2 / 5 / 3;
+    grid-area: 3 / 2 / 4 / 3;
 }
 
 .mywork-image img {
@@ -349,11 +353,17 @@
 }
 
 .mywork-description {
-    grid-area: 5 / 2 / 6 / 3;
+    grid-area: 4 / 2 / 5 / 3;
+    
+}
+
+.mywork-description p{
     font-family: var(--light-font-family);
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     background-color: var(--primary-color);
+    text-align: center;
+    padding: 4rem;
 }
 /* End of main section of (portfolio page) */
 
@@ -570,6 +580,21 @@ footer {
         filter: brightness(80%);
     }
 /* End of hamburger menu for mobile menu */
+
+/* start of portfolio page */
+.portfolio-page-main {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0.2rem;
+} 
+
+.portfolio-page-heading{
+    padding-right: 2rem;
+}
+.portfolio-page-heading h1 {
+    font-size: 2rem;
+}
+/* End of portfolio page */
 
 /* Start of contact page */
 .contact-form {
