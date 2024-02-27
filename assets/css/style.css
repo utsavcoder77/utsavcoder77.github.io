@@ -237,93 +237,49 @@
 
 /* Start of main section of (about page) */
 .about-utsav-banner {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 3fr 17rem 18rem 3fr 19rem 19rem 3fr;
-    grid-template-rows: 17.5rem 6.5rem 10rem 8rem 2rem 6rem 6.5rem 8rem 3rem 18rem 20rem 10rem;
+    display: flex;
+    gap: 5rem;
+    margin: 5rem 5rem;
+    
 }
 
-.about-skills-heading {
-    grid-area: 1 / 2 / 2 / 7;
-    align-self: center;
-   
+.about-skills-picture {
+    flex-basis: 20%;
 }
 
-.about-skills-heading h1 {
-    background-color: var(--secondary-font-color);
+.my-skills {
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.my-skills h1 {
     font-family: var(--Bold-font-family);
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+
+.my-skills h3 {
+    font-family: var(--Bold-font-family);
+    font-size: 2rem;
     font-weight: bolder;
-    font-size: 2.8rem;
-    padding: 2rem;
-    border-radius: 1.2rem 2rem;
-    color: var(--secondary-font-color);
-    animation: change-color 2s infinite ease-out;
 }
 
-
-@keyframes change-color {
-    from {
-        background-color: var(--secondary-font-color);
-        color: var(--secondary-font-color);
-        
-    }
-
-    to {
-        background-color: var(--primary-color);
-        color: rgb(123, 214, 250);
-
-    }
-    
-}
-
-.about-utsav-banner-picture {
-    grid-area: 2 / 2 / 9 / 4;
-}
-
-.about-utsav-banner-picture  img{
-    max-width: 100%;
-    height: 100%;
-    object-position: top;
-    object-fit: cover;
-    border-radius: 1.875rem;
-}
-
-.my-skills-paragraph {
-    grid-area: 2 / 5 / 5 / 7;
-    background-color: var(--primary-color);
-    color: var(--secondary-font-color);
+.my-skills .my-skills-paragraph {
     font-family: var(--light-font-family);
     font-size: 1.5rem;
-    line-height: 1.8rem;
-    padding: 2rem;
-}
-
-.my-skills-paragraph-2 {
-    grid-area: 6 / 5 / 9 / 7;
-    background-color: var(--primary-color);
-    color: var(--secondary-font-color);
-    font-family: var(--light-font-family);
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 2rem;
-}
-
-.about-utsav-banner-paragraph {
-    grid-area: 10 / 3 / 12 / 6;
-    background-color: var(--secondary-color);
-    max-width: 100%;
-    align-content: center;
-}
-
-.about-utsav-banner-paragraph p{
-    font-family: var(--light-font-family);
-    color: var(--secondary-font-color);
+    font-weight: 600;
+    align-items: center;
     line-height: 2rem;
-    font-size: 1.5rem;
-    align-self: center;
-    padding: 2rem;
 }
-    
+
+.about-utsav-banner-picture img {
+    max-width: 100%;
+
+}
+
+
 /* End of main section of (about page) */
 
 /* Start of main section of (portfolio page) */
@@ -615,16 +571,24 @@ footer {
 
     /* Start of main section of about page */
     .about-utsav-banner {
-        width: 100%;
-        display: flex;
         flex-direction: column;
+        gap: 1rem;
         margin: 3rem 0;
-        gap: 2rem;
+        padding: 0;
     }
 
-    .about-skills-heading h1 {
-        font-size: 1.5rem;
+    .my-skills h1 {
+        font-size: 1.7rem;
     }
+
+    .my-skills h3 {
+        font-size: 1.1rem;
+    }
+
+    .my-skills .my-skills-paragraph {
+        font-size: 1rem;
+    }
+    
     /* End of main section of about page */
 
     /* Start of footer css for max-width 800px */
