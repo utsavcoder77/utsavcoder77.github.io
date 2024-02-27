@@ -383,7 +383,7 @@ label {
     margin: 0 10%;
     padding: 2.8rem 3.4rem;
     border-radius: 2rem;
-   
+    
 }
 
 .row {
@@ -394,15 +394,14 @@ label {
 .col {
     padding: 1.3rem 2.2rem;
     text-align: left;
-    margin: auto;
-    max-width: 100%;
-    width: 550px;
+    
 }
 
 .form-control {
     width: 100%;
     border: none;
     padding: 1.2rem 1.8rem;
+    
 }
 
 
@@ -602,6 +601,7 @@ footer {
 .contact-form {
     grid-auto-columns: auto;
 }
+
 /* End of contact page */
 
 /* Start of main section of index page */
