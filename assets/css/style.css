@@ -37,25 +37,25 @@
     margin: 1rem 0 1rem 0;
     background: var(--secondary-font-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 /* Start of navigation-bar */
 .navigation-bar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 .logo-portfolio {
     display: flex;
     width: 50%;
+    padding-top: 1rem;
 }
 
 .logo-portfolio img{
     width: 12.5rem;
     height: 100%; 
-    filter: brightness(80%);
 }
 
 .navigation-bar ul {
@@ -108,7 +108,7 @@
     top: 5%;
     bottom: 0;
     width: 100%;
-    max-width: 8rem;
+    max-width: 10rem;
 }
 
 .mobile-main-nav ul{
@@ -516,6 +516,7 @@ footer {
     .hamburger-menu {
         display: block;
         text-align: right;
+        
     }
 
     .navigation-bar ul {
@@ -529,6 +530,10 @@ footer {
     .navigation-bar {
         display: flex;
         justify-content: flex-start;
+    }
+    
+    .logo-portfolio{
+        padding: 0;
     }
 
     .logo-portfolio img{
