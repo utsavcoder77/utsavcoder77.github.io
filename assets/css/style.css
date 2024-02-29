@@ -727,13 +727,10 @@ footer {
 /* End of media quries for max-width 1080px */
 
 /* Start of media queries for min-width 801px */
-@media screen and (min-width: 801px) and (max-width: 1000px) {
-    body {
-        margin: 0 2rem;
-    }
+@media screen and (min-width: 801px) {
 
     .myresume {
-        margin: 3rem 0;
+        margin: 3rem 4rem;
     }
 }
 /* SEnd of media queries for min-width 801px */
