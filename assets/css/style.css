@@ -496,8 +496,6 @@ footer {
 
 .logo-footer img {
     width: 120px;
-    background-color: transparent;
-    filter: opacity(0.5) brightness(150%);
     
 }
 /* End of logo of footer styling */
