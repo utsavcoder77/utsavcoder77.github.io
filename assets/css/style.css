@@ -99,25 +99,31 @@
     display: none;
     color: var(--secondary-color);
     background-color: transparent;
+    
 }
 
 .mobile-main-nav {
     display: none;
     position: absolute;
-    right: 0;
-    top: 5%;
+    right: 0%;
+    top: 0%;
     bottom: 0;
     width: 100%;
     max-width: 10rem;
+    padding: 30px;
+    background-color: var(--primary-color);
+    
 }
 
 .mobile-main-nav ul{
-    background-color: var(--primary-color);
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
 }
 
 .mobile-main-nav a {
@@ -607,6 +613,7 @@ footer {
         display: none;
     }
 
+
     .show-mobile-menu {
         display: block;
     }
@@ -625,6 +632,7 @@ footer {
         height: 100%; 
         filter: brightness(80%);
     }
+
 /* End of hamburger menu for mobile menu */
 
 /* start of portfolio page */
