@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
 </head>
@@ -37,23 +40,25 @@
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
-            <ul>
-                <li><a href="../portfolio_utsav/index.html">Home</a></li>
-                <li><a href="/files_html/about.html">About</a></li>
-                <li><a href="../files_html/portfolio.html">Portfolio</a></li>
-                <li><a href="../files_html/resume.html">Resume</a></li>
-                <li>
-                    <a href="/files_html/contact.html">
-                        <button class="button-connect">Contact</button>
-                    </a>
-                </li>
-            </ul>
+            <div class="nav-links-mobile">
+                <ul>
+                    <li><a href="../portfolio_utsav/index.html">Home</a></li>
+                    <li><a href="/files_html/about.html">About</a></li>
+                    <li><a href="../files_html/portfolio.html">Portfolio</a></li>
+                    <li><a href="../files_html/resume.html">Resume</a></li>
+                    <li>
+                        <a href="/files_html/contact.html">
+                            <button class="button-connect">Contact</button>
+                        </a>
+                    </li>
+                </ul>
 
         </nav>
         <div class="show-button">
             <button class="hamburger-menu" onclick="showMobileMenu()">
-                <i class="fa-regular fa-bars"></i>
+                <i class="fa-solid fa-bars"></i>
             </button>
+        </div>
         </div>
     </header>
     <!-- End of header -->
@@ -130,10 +135,10 @@
     <script>
         const mobileMainNav = document.getElementById("mobile-main-nav");
         function showMobileMenu() {
-            mobileMainNav.classList.add("show-mobile-menu");
+            mobileMainNav.classList.add("mobile-main-nav");
         }
         function hideMobileMenu() {
-            mobileMainNav.classList.remove("show-mobile-menu");
+            mobileMainNav.classList.remove("mobile-main-nav");
         }
     </script>
 </body>
