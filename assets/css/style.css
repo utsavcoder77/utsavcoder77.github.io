@@ -9,6 +9,7 @@
     font-family: RobotoCondensed-Bold;
     src: url(../fonts/RobotoCondensed-Bold.ttf);
 }
+
 @font-face {
     font-family: RobotoCondensed-extralight;
     src: url(../fonts/RobotoCondensed-ExtraLight.ttf);
@@ -24,9 +25,10 @@
     --primary-font-color: rgb(0, 0, 0);
     --secondary-font-color: rgb(255, 255, 255);
 }
+
 /* End of root element */
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -40,6 +42,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 /* Start of navigation-bar */
 .navigation-bar {
     display: flex;
@@ -53,10 +56,9 @@
     padding-top: 1rem;
 }
 
-.logo-portfolio img{
+.logo-portfolio img {
     width: 12.5rem;
-    height: 100%; 
-   
+    height: 100%;
 }
 
 .navigation-bar ul {
@@ -86,6 +88,7 @@
     padding: 1rem 2rem;
     border: none;
 }
+
 .button-connect:hover {
     background-color: var(--primary-color);
     cursor: pointer;
@@ -100,7 +103,7 @@
     display: none;
     color: var(--secondary-color);
     background-color: transparent;
-    
+
 }
 
 .mobile-main-nav {
@@ -116,7 +119,7 @@
     height: 80vh;
 }
 
-.mobile-main-nav ul{
+.mobile-main-nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -145,15 +148,16 @@
 .show-mobile-menu {
     display: none;
 }
+
 /* End of navigation bar */
 /* End of header for all pages (home, about, portfolio, contact, resume)*/
 
 /* Start of main section  index page */
-.utsav-banner{
+.utsav-banner {
     display: grid;
     grid-template-columns: 3.2rem 1fr 1fr 3.2rem 1fr 1fr 1fr 3.2rem;
     grid-template-rows: 4rem 3rem 1fr 1fr 3rem 3rem 6rem 7rem 4rem;
-    
+
 }
 
 .utsav-banner-text {
@@ -168,14 +172,14 @@
     align-self: baseline;
 }
 
-.utsav-banner h1{
+.utsav-banner h1 {
     font-family: var(--Bold-font-family);
     color: var(--secondary-color);
     font-weight: bolder;
     font-size: 4rem;
 }
 
-.utsav-banner-header-second-line{
+.utsav-banner-header-second-line {
     color: var(--primary-color);
 }
 
@@ -184,7 +188,7 @@
     align-self: center;
 }
 
-.utsav-banner p{
+.utsav-banner p {
     font-family: var(--light-font-family);
     font-weight: bold;
     font-size: 1.37rem;
@@ -240,6 +244,7 @@
     border-radius: 50% 0 50% 0;
     filter: drop-shadow(8px 8px 15px var(--secondary-color));
 }
+
 /* End of  main section of (index page) */
 
 /* Start of main section of (about page) */
@@ -247,7 +252,7 @@
     display: flex;
     gap: 5rem;
     margin: 5rem 5rem;
-    
+
 }
 
 .about-skills-picture {
@@ -317,10 +322,10 @@
 
 .mywork-description {
     grid-area: 4 / 2 / 5 / 3;
-    
+
 }
 
-.mywork-description p{
+.mywork-description p {
     font-family: var(--light-font-family);
     font-weight: 700;
     font-size: 20px;
@@ -328,6 +333,7 @@
     text-align: center;
     padding: 4rem;
 }
+
 /* End of main section of (portfolio page) */
 
 /* start of main section of resume page */
@@ -339,7 +345,7 @@
     width: 100%;
     max-width: 1440px;
     flex-wrap: wrap;
-    
+
 }
 
 .resume-heading h1 {
@@ -373,13 +379,14 @@
     font-size: 1.3rem;
 }
 
-.resume-summary p{
+.resume-summary p {
     font-family: var(--light-font-family);
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.9rem;
 }
-.skills-list-resume > h2 {
+
+.skills-list-resume>h2 {
     font-family: var(--Bold-font-family);
     color: var(--secondary-color);
     font-size: 2rem;
@@ -394,7 +401,7 @@
     font-size: 1.3rem;
 }
 
-.education h2{
+.education h2 {
     font-family: var(--Bold-font-family);
     color: var(--secondary-color);
     font-size: 2rem;
@@ -424,7 +431,7 @@ label {
     font-family: var(--light-font-family);
     font-weight: bold;
     font-size: 1.8rem;
-    
+
 }
 
 .contact-form {
@@ -432,7 +439,7 @@ label {
     margin: 0 10%;
     padding: 2.8rem 3.4rem;
     border-radius: 2rem;
-    
+
 }
 
 .row {
@@ -443,14 +450,14 @@ label {
 .col {
     padding: 1.3rem 2.2rem;
     text-align: left;
-    
+
 }
 
 .form-control {
     width: 100%;
     border: none;
     padding: 1.2rem 1.8rem;
-    
+
 }
 
 
@@ -486,13 +493,15 @@ label {
 footer {
     background-color: var(--secondary-color);
 }
+
 /* footer grid-container start */
 .myfooter {
-   display: grid;
-   grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
-   padding: 5rem 5rem;
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 5rem 5rem;
 }
+
 /* footer grid-container end */
 
 /* Start of logo of footer styling */
@@ -503,13 +512,14 @@ footer {
 
 .logo-footer img {
     width: 120px;
-    
+
 }
+
 /* End of logo of footer styling */
 
 /* Start of quick-links */
 .quick-links {
-   grid-area: 2 / 3 / 4 / 4;
+    grid-area: 2 / 3 / 4 / 4;
 }
 
 .quick-links h2 {
@@ -520,7 +530,7 @@ footer {
 
 .quick-links ul {
     list-style-type: none;
-    
+
 }
 
 .quick-links ul li a {
@@ -529,6 +539,7 @@ footer {
     font-family: var(--light-font-family);
     line-height: 2rem;
 }
+
 /* End of quick-links */
 
 /* Start of conatct-me */
@@ -540,7 +551,7 @@ footer {
     gap: 10px;
 }
 
-.contact-me h3{
+.contact-me h3 {
     color: var(--secondary-font-color);
     font-family: var(--Bold-font-family);
     font-size: 22px;
@@ -559,14 +570,15 @@ footer {
     text-decoration: none;
     font-size: 16px;
 }
+
 /* End of conatct-me */
 
 /* Start of social-media-links */
 .social-media-links {
-   grid-area: 2 / 5 / 3 / 6;
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
+    grid-area: 2 / 5 / 3 / 6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .social-media {
@@ -584,6 +596,7 @@ footer {
 .social-media img {
     width: 20px;
 }
+
 /* End of social-media-links */
 
 /* Start of copyright info */
@@ -592,22 +605,24 @@ footer {
     align-self: center;
 }
 
-.copyright-info p{
+.copyright-info p {
     font-family: var(--extra-light-font-family);
     color: var(--secondary-font-color);
 }
+
 /* End of copyright info */
 /* End of footer for all pages (home, about, portfolio, contact, resume) */
-    
+
 /* Start of media-quires for main section of landing page */
 
 /* Start of media quires for small screen */
 @media screen and (max-width: 800px) {
-/* Start of hambuger-menu for mobile  */
+
+    /* Start of hambuger-menu for mobile  */
     .hamburger-menu {
         display: block;
         text-align: right;
-        
+
     }
 
     .navigation-bar ul {
@@ -623,49 +638,52 @@ footer {
         display: flex;
         justify-content: flex-start;
     }
-    
-    .logo-portfolio{
+
+    .logo-portfolio {
         padding: 0;
     }
 
-    .logo-portfolio img{
+    .logo-portfolio img {
         width: 7rem;
-        height: 100%; 
+        height: 100%;
         filter: brightness(80%);
         mix-blend-mode: multiply;
     }
 
-/* End of hamburger menu for mobile menu */
+    /* End of hamburger menu for mobile menu */
 
-/* start of portfolio page */
-.portfolio-page-main {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem 0.2rem;
-} 
+    /* start of portfolio page */
+    .portfolio-page-main {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0.2rem;
+    }
 
-.portfolio-page-heading{
-    padding-right: 2rem;
-}
-.portfolio-page-heading h1 {
-    font-size: 2rem;
-}
-/* End of portfolio page */
+    .portfolio-page-heading {
+        padding-right: 2rem;
+    }
 
-/* Start of contact page */
-.contact-form {
-    grid-auto-columns: auto;
-}
+    .portfolio-page-heading h1 {
+        font-size: 2rem;
+    }
 
-/* End of contact page */
+    /* End of portfolio page */
 
-/* Start of main section of index page */
+    /* Start of contact page */
+    .contact-form {
+        grid-auto-columns: auto;
+    }
+
+    /* End of contact page */
+
+    /* Start of main section of index page */
     .utsav-banner {
         display: flex;
         flex-direction: column;
         gap: 15px;
         padding: 11rem 0;
     }
+
     /* End of main section of index page */
 
     /* Start of main section of about page */
@@ -687,7 +705,7 @@ footer {
     .my-skills .my-skills-paragraph {
         font-size: 1rem;
     }
-    
+
     /* End of main section of about page */
 
     /* Start of main section of resume page */
@@ -696,13 +714,14 @@ footer {
         padding: 1rem 1rem;
         column-gap: 1rem;
     }
-    
-    .contact-resume span{
+
+    .contact-resume span {
         display: inline-block;
         font-size: 0.8rem;
-        
-        
+
+
     }
+
     /* End of main section of resume page */
 
     /* Start of footer css for max-width 800px */
@@ -712,10 +731,10 @@ footer {
         gap: 3rem;
         align-items: center;
         width: 100%;
-     }
+    }
 
     /* End of footer css for max-width 800px */
-    
+
 }
 
 @media screen and (min-width: 800px) {
@@ -723,6 +742,7 @@ footer {
         display: none;
     }
 }
+
 /* End of media queries for small screen */
 
 /* Start of media quries for max-width 1080px */
@@ -732,6 +752,7 @@ footer {
         line-height: 5rem;
     }
 }
+
 /* End of media quries for max-width 1080px */
 
 /* Start of media queries for min-width 801px */
@@ -741,10 +762,5 @@ footer {
         margin: 3rem 4rem;
     }
 }
+
 /* SEnd of media queries for min-width 801px */
-
-
-
-
-
-
