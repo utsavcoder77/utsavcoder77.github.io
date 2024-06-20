@@ -14,13 +14,46 @@
 
 <body>
     <!-- Start of header -->
-    <header class="main-nav">
-        <nav class="navigation-bar">
-            <figure class="logo-portfolio">
+    <header>
+        <nav class="main-nav-desktop">
+            <figure class="desktop-logo">
                 <a href="./index.html">
-                    <img src="./assets/images/logo.jpg" alt="logo of the website">
+                    <img src="./assets/images/logo.png" alt="logo">
                 </a>
             </figure>
+            <div class="main-nav-list">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="/files_html/about.html">About</a></li>
+                    <li><a href="../files_html/portfolio.html">Portfolio</a></li>
+                    <li><a href="../files_html/resume.html">Resume</a></li>
+                    <li>
+                        <a href="/files_html/contact.html">
+                            <button class="button-connect">Contact</button>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header -->
+    <!-- Start of mobile menu -->
+    <nav class="mobile-nav">
+        <div class="mobile-show-button">
+            <figure class="mobile-logo">
+                <a href="./index.html">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </figure>
+            <div class="show-button">
+                <button class="hamburger-menu" id="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-links" id="mobile-links">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="/files_html/about.html">About</a></li>
@@ -32,46 +65,16 @@
                     </a>
                 </li>
             </ul>
-        </nav>
 
-        <!-- Mobile Menu -->
-        <nav class="nav-mobile">
-            <figure class="logo-portfolio-mobile">
-                <a href="./index.html">
-                    <img class="mobile-logo" src="./assets/images/logo.jpg" alt="logo of the website">
-                </a>
-            </figure>
-            <div class="show-button">
-                <button class="hamburger-menu" id="hamburger-menu">
-                    <i class="fa-solid fa-bars"></i>
+            <div class="close-button" id="close-button">
+                <button class="hamburger-menu-close" id="hamburger-menu-close">
+                    <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
-        </nav>
 
-        <div class="mobile-main-nav" id="mobile-main-nav">
-            <div class="nav-links-mobile">
-                <ul>
-                    <li><a href="../portfolio_utsav/index.html">Home</a></li>
-                    <li><a href="/files_html/about.html">About</a></li>
-                    <li><a href="../files_html/portfolio.html">Portfolio</a></li>
-                    <li><a href="../files_html/resume.html">Resume</a></li>
-                    <li>
-                        <a href="/files_html/contact.html">
-                            <button class="button-connect">Contact</button>
-                        </a>
-                    </li>
-                </ul>
-                <div class="close-button" id="close-button">
-                    <button class="hamburger-menu-close" id="hamburger-menu-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-            </div>
         </div>
 
-
-    </header>
-    <!-- End of header -->
+    </nav>
     <!-- Start of main section -->
     <main>
         <div class="utsav-banner">
@@ -101,7 +104,7 @@
     <footer>
         <div class="myfooter">
             <figure class="logo-footer">
-                <img src="./assets/images/logo.jpg" alt="logo of website">
+                <img src="./assets/images/logo_footer.png" alt="logo of website">
             </figure>
             <div class="quick-links">
                 <h2>Qucik links</h2>
@@ -142,22 +145,8 @@
         </div>
     </footer>
     <!-- End of footer -->
-    <script>
-        const hamburgerMenu = document.getElementById("hamburger-menu");
-        const hamburgerClose = document.getElementById("hamburger-menu-close");
+    <script src="./assets/js/index.js">
 
-        function openButton() {
-            const mobileMainNav = document.getElementById("mobile-main-nav");
-            mobileMainNav.style.display = "flex"
-        }
-
-        function closeButton() {
-            const mobileMainNav = document.getElementById("mobile-main-nav");
-            mobileMainNav.style.display = "none"
-        }
-
-        hamburgerMenu.addEventListener("click", openButton);
-        hamburgerClose.addEventListener("click", closeButton);
     </script>
 </body>
 

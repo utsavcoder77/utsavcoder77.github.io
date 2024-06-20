@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <!-- Start of header -->
-    <header class="main-nav">
-        <nav class="navigation-bar">
-            <figure class="logo-portfolio">
+    <header>
+        <nav class="main-nav-desktop">
+            <figure class="desktop-logo">
                 <a href="./index.html">
-                    <img src="../assets/images/logo.jpg" alt="logo of the website">
+                    <img src="../assets/images/logo.png" alt="logo">
                 </a>
             </figure>
+            <div class="main-nav-list">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="/files_html/about.html">About</a></li>
+                    <li><a href="../files_html/portfolio.html">Portfolio</a></li>
+                    <li><a href="../files_html/resume.html">Resume</a></li>
+                    <li>
+                        <a href="/files_html/contact.html">
+                            <button class="button-connect">Contact</button>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header -->
+    <!-- Start of mobile menu -->
+    <nav class="mobile-nav">
+        <div class="mobile-show-button">
+            <figure class="mobile-logo">
+                <a href="./index.html">
+                    <img src="../assets/images/logo.png" alt="logo">
+                </a>
+            </figure>
+            <div class="show-button">
+                <button class="hamburger-menu" id="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-links" id="mobile-links">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="/files_html/about.html">About</a></li>
@@ -27,34 +65,16 @@
                     </a>
                 </li>
             </ul>
-        </nav>
 
-        <nav class="mobile-main-nav" id="mobile-main-nav">
             <div class="close-button" id="close-button">
-                <button class="hamburger-menu" onclick="hideMobileMenu()">
+                <button class="hamburger-menu-close" id="hamburger-menu-close">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="/files_html/about.html">About</a></li>
-                <li><a href="../files_html/portfolio.html">Portfolio</a></li>
-                <li><a href="../files_html/resume.html">Resume</a></li>
-                <li>
-                    <a href="/files_html/contact.html">
-                        <button class="button-connect">Contact</button>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="show-button">
-            <button class="hamburger-menu" onclick="showMobileMenu()">
-                <i class="fa-regular fa-bars"></i>
-            </button>
-        </div>
-    </header>
-    <!-- End of header -->
 
+        </div>
+
+    </nav>
     <!-- Start of main section of portfolio-page -->
     <main>
         <div class="portfolio-page-main">
@@ -65,7 +85,14 @@
                 <img src="../assets/images/website-work.png" alt="Capture amazing memories work website screenshot">
             </figure>
             <div class="mywork-description">
-                <p>Recently, I've been deeply engaged in the development of a website called "Capture Amazing Memories." This project has been an exhilarating journey where I've poured my creativity and technical expertise into crafting a platform that celebrates the beauty of preserving cherished moments. From conceptualization to implementation, I've strived to create a user-friendly interface that seamlessly integrates innovative features for uploading, organizing, and sharing memories in captivating ways. With a focus on enhancing user experience and leveraging cutting-edge technologies, "Capture Amazing Memories" aims to become the go-to destination for individuals seeking to immortalize their most precious experiences.</p>
+                <p>Recently, I've been deeply engaged in the development of a website called "Capture Amazing Memories."
+                    This project has been an exhilarating journey where I've poured my creativity and technical
+                    expertise into crafting a platform that celebrates the beauty of preserving cherished moments. From
+                    conceptualization to implementation, I've strived to create a user-friendly interface that
+                    seamlessly integrates innovative features for uploading, organizing, and sharing memories in
+                    captivating ways. With a focus on enhancing user experience and leveraging cutting-edge
+                    technologies, "Capture Amazing Memories" aims to become the go-to destination for individuals
+                    seeking to immortalize their most precious experiences.</p>
             </div>
         </div>
     </main>
@@ -75,7 +102,7 @@
     <footer>
         <div class="myfooter">
             <figure class="logo-footer">
-                <img src="../assets/images/logo.jpg" alt="logo of website">
+                <img src="../assets/images/logo_footer.png" alt="logo of website">
             </figure>
             <div class="quick-links">
                 <h2>Qucik links</h2>
@@ -104,7 +131,7 @@
                     </a>
                     <a href="https://twitter.com/Baral_U47">
                         <img src="../assets/images/twitter.png" alt="twitter icon">
-                    </a >
+                    </a>
                     <a href="https://www.instagram.com/utsav_baral33/?next=%2F">
                         <img src="../assets/images/instagram.png" alt="instagram icon">
                     </a>
@@ -117,14 +144,9 @@
     </footer>
     <!-- End of footer -->
 
-    <script>
-        const mobileMainNav = document.getElementById("mobile-main-nav");
-        function showMobileMenu() {
-            mobileMainNav.classList.add("show-mobile-menu");
-         }
-        function hideMobileMenu() {
-            mobileMainNav.classList.remove("show-mobile-menu");
-        }
+    <script src="../assets/js/index.js">
+
     </script>
 </body>
+
 </html>

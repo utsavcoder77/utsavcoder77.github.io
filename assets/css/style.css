@@ -34,140 +34,106 @@
 }
 
 /* Start of header for all pages (home, about, portfolio, contact, resume) */
-.main-nav {
-    margin: 1rem 0 1rem 0;
-    background: var(--secondary-font-color);
+
+header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 10px;
 }
 
-/* Start of navigation-bar */
-.navigation-bar {
+.main-nav-desktop {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    width: 100%;
+    width: 100%
 }
 
-.logo-portfolio {
+.desktop-logo img {
+    width: 150px;
+
+}
+
+.main-nav-list ul {
     display: flex;
-    width: 50%;
-    padding-top: 1rem;
-}
-
-.logo-portfolio img {
-    width: 12.5rem;
-    height: 100%;
-}
-
-.navigation-bar ul {
-    display: flex;
-    list-style-type: none;
-    gap: 3.125rem;
+    justify-content: space-between;
     align-items: center;
+    gap: 30px;
+    list-style-type: none;
 }
 
-.navigation-bar ul li a {
+.main-nav-list ul a {
     text-decoration: none;
-    font-family: var(--Bold-font-family);
     color: var(--primary-font-color);
-    font-size: 1.2rem;
-}
-
-.navigation-bar ul li a:hover {
-    color: var(--primary-color);
+    font-family: var(--Bold-font-family);
 }
 
 .button-connect {
-    color: var(--secondary-font-color);
     background-color: var(--secondary-color);
-    font-family: var(--Bold-font-family);
-    font-size: 1.2rem;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
+    color: var(--secondary-font-color);
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    font-family: var(--light-font-family);
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
     border: none;
-}
-
-.logo-portfolio-mobile {
-    display: none;
-}
-
-.nav-mobile {
-    display: flex;
-    justify-content: flex-start;
 }
 
 .button-connect:hover {
     background-color: var(--primary-color);
-    cursor: pointer;
 }
 
-.hamburger-menu {
-    position: absolute;
-    right: 2%;
-    top: 2%;
+
+.mobile-show-button {
+    display: none;
+
+}
+
+
+.hamburger-menu,
+.hamburger-menu-close {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
     border: none;
-    font-size: 2rem;
-    display: none;
+    background: none;
     color: var(--secondary-color);
-    background-color: transparent;
-
 }
 
-.nav-links-mobile {
-    display: flex;
-    width: 100%;
-}
-
-.mobile-main-nav {
+.mobile-links {
     display: none;
     position: absolute;
-    right: 0%;
-    z-index: 100;
-    top: 0%;
+    top: 0;
+    height: 100%;
     width: 100%;
-    max-width: 10rem;
-    padding: 30px;
     background-color: var(--primary-color);
-    height: 100vh;
+
 }
 
-.nav-links-mobile ul {
-    list-style-type: none;
+.mobile-links ul {
     display: flex;
+    height: 100vh;
+    width: 100%;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
     align-items: center;
-    height: 50%;
-    width: 90%;
-
+    list-style-type: none;
+    gap: 30px;
 }
 
-.background-mobile {
-    background-color: skyblue;
-}
-
-
-
-.mobile-main-nav a {
+.mobile-links ul li a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--primary-font-color);
     font-family: var(--Bold-font-family);
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    font-size: 30px;
 }
 
-.mobile-main-nav .close-button button {
-    background: transparent;
-    border: 0;
-    font-size: 2rem;
 
-}
-
-.show-mobile-menu {
-    display: none;
+.close-button {
+    position: absolute;
+    top: 2%;
+    right: 2%;
 }
 
 /* End of navigation bar */
@@ -176,9 +142,16 @@
 /* Start of main section  index page */
 .utsav-banner {
     display: grid;
+    width: 100%;
+    max-width: 1200px;
     grid-template-columns: 3.2rem 1fr 1fr 3.2rem 1fr 1fr 1fr 3.2rem;
     grid-template-rows: 4rem 3rem 1fr 1fr 3rem 3rem 6rem 7rem 4rem;
 
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 .utsav-banner-text {
@@ -264,6 +237,7 @@
     object-position: center;
     border-radius: 50% 0 50% 0;
     filter: drop-shadow(8px 8px 15px var(--secondary-color));
+
 }
 
 /* End of  main section of (index page) */
@@ -638,59 +612,28 @@ footer {
 
 /* Start of media quires for small screen */
 @media screen and (max-width: 800px) {
-    body {
-        padding: 4px;
+    .main-nav-desktop {
+        display: none;
     }
 
-    .nav-mobile {
+    .mobile-show-button {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        padding: 0 1rem;
     }
 
-    .logo-portfolio-mobile {
-        display: block;
-    }
-
-    .mobile-logo {
-
+    .mobile-logo img {
         width: 100px;
     }
 
     /* Start of hambuger-menu for mobile  */
-    .hamburger-menu {
-        display: block;
-        text-align: right;
 
-    }
-
-
-    .navigation-bar ul {
-        display: none;
-    }
-
-
-    .show-mobile-menu {
-        display: block;
-    }
-
-    .navigation-bar {
-        display: none;
-
-    }
-
-    .logo-portfolio {
-        padding: 0;
-    }
-
-    .logo-portfolio img {
-        width: 7rem;
-        height: 100%;
-        filter: brightness(80%);
-        mix-blend-mode: multiply;
-    }
 
     /* End of hamburger menu for mobile menu */
+
+    .utsav-picture img {
+        width: 400px;
+    }
 
     /* start of portfolio page */
     .portfolio-page-main {
@@ -720,8 +663,10 @@ footer {
     .utsav-banner {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 15px;
-        padding: 11rem 0;
+        padding: 11rem 1rem;
     }
 
     /* End of main section of index page */

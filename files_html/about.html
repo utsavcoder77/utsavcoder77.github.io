@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <!-- Start of header -->
-    <header class="main-nav">
-        <nav class="navigation-bar">
-            <figure class="logo-portfolio">
-                <a href="../index.html">
-                    <img src="../assets/images/logo.jpg" alt="logo of the website">
+    <header>
+        <nav class="main-nav-desktop">
+            <figure class="desktop-logo">
+                <a href="./index.html">
+                    <img src="../assets/images/logo.png" alt="logo">
                 </a>
             </figure>
+            <div class="main-nav-list">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="/files_html/about.html">About</a></li>
+                    <li><a href="../files_html/portfolio.html">Portfolio</a></li>
+                    <li><a href="../files_html/resume.html">Resume</a></li>
+                    <li>
+                        <a href="/files_html/contact.html">
+                            <button class="button-connect">Contact</button>
+                        </a>
+                    </li>
 
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header -->
+    <!-- Start of mobile menu -->
+    <nav class="mobile-nav">
+        <div class="mobile-show-button">
+            <figure class="mobile-logo">
+                <a href="./index.html">
+                    <img src="../assets/images/logo.png" alt="logo">
+                </a>
+            </figure>
+            <div class="show-button">
+                <button class="hamburger-menu" id="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-links" id="mobile-links">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="/files_html/about.html">About</a></li>
@@ -28,57 +65,52 @@
                     </a>
                 </li>
             </ul>
-        </nav>
-        <nav class="mobile-main-nav" id="mobile-main-nav">
+
             <div class="close-button" id="close-button">
-                <button class="hamburger-menu" onclick="hideMobileMenu()">
+                <button class="hamburger-menu-close" id="hamburger-menu-close">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="/files_html/about.html">About</a></li>
-                <li><a href="../files_html/portfolio.html">Portfolio</a></li>
-                <li><a href="../files_html/resume.html">Resume</a></li>
-                <li>
-                    <a href="/files_html/contact.html">
-                        <button class="button-connect">Contact</button>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="show-button">
-            <button class="hamburger-menu" onclick="showMobileMenu()">
-                <i class="fa-regular fa-bars"></i>
-            </button>
+
         </div>
-    </header>
-    <!-- End of header -->
 
-        <!-- Start of main section -->
-        <main>
-            <div class="about-utsav-banner">
-                <div class="about-skills-picture">
-                    <figure class="about-utsav-banner-picture">
-                        <img src="../assets/images/utsav-2.jpeg" alt="picture of utsav doing code">
-                    </figure>
-                </div>
+    </nav>
 
-                <div class="my-skills">
-                    <h1>Hello there! I'm Utsav Baral, junior full-stack developer</h1>
-                    <h3>My Skills on Html, css and javascript for frontend development</h1>
-                    <p class="my-skills-paragraph">With a proficient command over HTML and CSS, I possess a robust skill set in front-end web development. In HTML, I excel in structuring web content effectively, utilizing semantic elements to enhance accessibility and SEO. My expertise extends to creating responsive and visually appealing layouts using CSS, leveraging various techniques such as flexbox and grid for optimal design. I am adept at implementing styling principles to achieve consistency and coherence across web pages, while also ensuring compatibility with different browsers.</p>
-                    <p class="my-skills-paragraph">My proficiency in JavaScript encompasses a diverse range of capabilities that empower me in web development projects. With a deep understanding of core concepts like variables, loops, and functions, I can craft efficient and dynamic scripts to manipulate web page elements and respond to user interactions seamlessly. I excel in utilizing modern frameworks and libraries such as React.js or Vue.js to build interactive and responsive user interfaces, harnessing the power of components and state management.</p>
-                </div>                
+    <!-- Start of main section -->
+    <main>
+        <div class="about-utsav-banner">
+            <div class="about-skills-picture">
+                <figure class="about-utsav-banner-picture">
+                    <img src="../assets/images/utsav-2.jpeg" alt="picture of utsav doing code">
+                </figure>
             </div>
-        </main>
-        <!-- End of main section -->
 
-         <!-- Start of footer -->
+            <div class="my-skills">
+                <h1>Hello there! I'm Utsav Baral, junior full-stack developer</h1>
+                <h3>My Skills on Html, css and javascript for frontend development</h1>
+                    <p class="my-skills-paragraph">With a proficient command over HTML and CSS, I possess a robust skill
+                        set in front-end web development. In HTML, I excel in structuring web content effectively,
+                        utilizing semantic elements to enhance accessibility and SEO. My expertise extends to creating
+                        responsive and visually appealing layouts using CSS, leveraging various techniques such as
+                        flexbox and grid for optimal design. I am adept at implementing styling principles to achieve
+                        consistency and coherence across web pages, while also ensuring compatibility with different
+                        browsers.</p>
+                    <p class="my-skills-paragraph">My proficiency in JavaScript encompasses a diverse range of
+                        capabilities that empower me in web development projects. With a deep understanding of core
+                        concepts like variables, loops, and functions, I can craft efficient and dynamic scripts to
+                        manipulate web page elements and respond to user interactions seamlessly. I excel in utilizing
+                        modern frameworks and libraries such as React.js or Vue.js to build interactive and responsive
+                        user interfaces, harnessing the power of components and state management.</p>
+            </div>
+        </div>
+    </main>
+    <!-- End of main section -->
+
+    <!-- Start of footer -->
     <footer>
         <div class="myfooter">
             <figure class="logo-footer">
-                <img src="../assets/images/logo.jpg" alt="logo of website">
+                <img src="../assets/images/logo_footer.png" alt="logo of website">
             </figure>
             <div class="quick-links">
                 <h2>Qucik links</h2>
@@ -107,7 +139,7 @@
                     </a>
                     <a href="https://twitter.com/Baral_U47">
                         <img src="../assets/images/twitter.png" alt="twitter icon">
-                    </a >
+                    </a>
                     <a href="https://www.instagram.com/utsav_baral33/?next=%2F">
                         <img src="../assets/images/instagram.png" alt="instagram icon">
                     </a>
@@ -120,16 +152,9 @@
     </footer>
     <!-- End of footer -->
 
-    <script>
-        const mobileMainNav = document.getElementById("mobile-main-nav");
-        function showMobileMenu() {
-            mobileMainNav.classList.add("show-mobile-menu");
-         }
-        function hideMobileMenu() {
-            mobileMainNav.classList.remove("show-mobile-menu");
-        }
+    <script src="../assets/js/index.js">
+
     </script>
 </body>
-</html>
 
-    
+</html>
