@@ -34,12 +34,21 @@
             </ul>
         </nav>
 
-        <nav class="mobile-main-nav" id="mobile-main-nav">
-            <div class="close-button" id="close-button">
-                <button class="hamburger-menu-close" onclick="hideMobileMenu()">
-                    <i class="fa-solid fa-xmark"></i>
+        <!-- Mobile Menu -->
+        <nav class="nav-mobile">
+            <figure class="logo-portfolio-mobile">
+                <a href="./index.html">
+                    <img class="mobile-logo" src="./assets/images/logo.jpg" alt="logo of the website">
+                </a>
+            </figure>
+            <div class="show-button">
+                <button class="hamburger-menu" id="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
+        </nav>
+
+        <div class="mobile-main-nav" id="mobile-main-nav">
             <div class="nav-links-mobile">
                 <ul>
                     <li><a href="../portfolio_utsav/index.html">Home</a></li>
@@ -52,14 +61,15 @@
                         </a>
                     </li>
                 </ul>
+                <div class="close-button" id="close-button">
+                    <button class="hamburger-menu-close" id="hamburger-menu-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-        </nav>
-        <div class="show-button">
-            <button class="hamburger-menu" onclick="showMobileMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-        </div>
+
     </header>
     <!-- End of header -->
     <!-- Start of main section -->
@@ -133,13 +143,21 @@
     </footer>
     <!-- End of footer -->
     <script>
-        const mobileMainNav = document.getElementById("mobile-main-nav");
-        function showMobileMenu() {
-            mobileMainNav.classList.add("mobile-main-nav");
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+        const hamburgerClose = document.getElementById("hamburger-menu-close");
+
+        function openButton() {
+            const mobileMainNav = document.getElementById("mobile-main-nav");
+            mobileMainNav.style.display = "flex"
         }
-        function hideMobileMenu() {
-            mobileMainNav.classList.remove("mobile-main-nav");
+
+        function closeButton() {
+            const mobileMainNav = document.getElementById("mobile-main-nav");
+            mobileMainNav.style.display = "none"
         }
+
+        hamburgerMenu.addEventListener("click", openButton);
+        hamburgerClose.addEventListener("click", closeButton);
     </script>
 </body>
 
